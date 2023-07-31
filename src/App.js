@@ -60,6 +60,7 @@ const call = (remotePeerID) =>{
     <div className="App">
       <input style={{width : '400px'}} type="text" /*value={peerID}*/ onChange={e => setRemotePeerIdValue(e.target.value)} />
       <button type="button" onClick={() => call(remotePeerIdValue)}>call</button>
+      <h1>{peerID}</h1>
       <div><video ref={remoteVideoRef} autoPlay></video></div>
       <div><video ref={currentVideoRef} autoPlay></video></div>
     </div>
